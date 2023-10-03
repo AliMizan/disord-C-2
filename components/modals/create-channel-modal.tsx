@@ -53,8 +53,8 @@ export const CreateChannelModal= () =>{
 
     const {isOpen,onClose,type} = useModal();
     const router = useRouter();
-
     const params = useParams();
+    
 
 
     const isModalOpen  = isOpen && type === "createChannel"
@@ -79,6 +79,7 @@ export const CreateChannelModal= () =>{
                 }
             })
             await axios.post(url,values);
+            
             form.reset();
             router.refresh();
             onClose();
