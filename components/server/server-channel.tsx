@@ -27,8 +27,6 @@ const ServerChannel = ({
 
     const params = useParams();
     
-
-
     const Icon = iconMap[channel.type];
 
 
