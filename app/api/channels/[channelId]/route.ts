@@ -107,7 +107,7 @@ export async function PATCH(
                 name,
                 type
               }
-            }
+            } 
             }
           }
         
