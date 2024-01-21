@@ -10,6 +10,7 @@ interface ServerIdProps{
 };
 
 const ServerIdPage = async ({params}:ServerIdProps) => {
+  
   const profile = await currentProfile();
 
   if(!profile){
@@ -44,9 +45,8 @@ const ServerIdPage = async ({params}:ServerIdProps) => {
     return null;
   }
 
-  return (
-   redirect(`/servers/${params.serverId}/channels/${initialChannel?.id}`)
-  )
+  return redirect(`/servers/${params.serverId}/channels/${initialChannel?.id}`)
+
 }
 
 export default ServerIdPage
