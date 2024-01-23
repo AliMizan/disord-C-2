@@ -45,6 +45,7 @@ export const ChatMessages = ({name,member,chatId,apiUrl,socketUrl,socketQuery,pa
 
 
         useEffect(() => {
+            
             messageEndRef.current?.scrollIntoView();
         },[data])
         if(status === "pending"){
